@@ -148,7 +148,7 @@ void setup() {
     Serial.println("Ready!");
 
     // hub.setupMQTT("test.mosquitto.org", 1883);
-    // hub.setupMQTT("voidsting915.cloud.shiftr.io", 1883, "voidsting915", "YnQ7lmKUOgi1T0m8");  // настраиваем MQTT
+    
     hub.setupMQTT(settings.host, atoi(settings.port), settings.login, settings.pass_mqtt);
     
     hub.onBuild(build);     // подключаем билдер
